@@ -1,0 +1,237 @@
+{
+  "Main Function": {
+    "prefix": "fnmain",
+    "body": [
+      "fn main() {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Creates the main function entry point"
+  },
+  "Println Macro": {
+    "prefix": "println",
+    "body": [
+      "println!(\"$1\");$0"
+    ],
+    "description": "Prints a line to the console using println!"
+  },
+  "Println Macro with Formatting": {
+    "prefix": "printlnf",
+    "body": [
+      "println!(\"{}\", $1);$0"
+    ],
+    "description": "Prints a formatted line using println!"
+  },
+  "Debug Print Macro": {
+    "prefix": "dbg",
+    "body": [
+      "dbg!($1);$0"
+    ],
+    "description": "Prints value with file/line info using dbg!"
+  },
+  "Function Definition": {
+    "prefix": "fn",
+    "body": [
+      "fn $1($2) $( -> $3 ){",
+      "\t$0",
+      "}"
+    ],
+    "description": "Creates a function definition"
+  },
+  "Struct Definition": {
+    "prefix": "struct",
+    "body": [
+      "struct $1 {",
+      "\t$2: $3,",
+      "\t$0",
+      "}"
+    ],
+    "description": "Creates a struct definition"
+  },
+  "Enum Definition": {
+    "prefix": "enum",
+    "body": [
+      "enum $1 {",
+      "\t$2,",
+      "\t$0",
+      "}"
+    ],
+    "description": "Creates an enum definition"
+  },
+  "Implementation Block": {
+    "prefix": "impl",
+    "body": [
+      "impl $1 {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Creates an implementation block for a struct or enum"
+  },
+  "Method in Impl Block": {
+    "prefix": "fnm",
+    "body": [
+      "fn $1(&self$2) $( -> $3 ){",
+      "\t$0",
+      "}"
+    ],
+    "description": "Creates a method within an impl block (takes &self)"
+  },
+  "Associated Function in Impl Block": {
+    "prefix": "fna",
+    "body": [
+      "fn $1($2) $( -> $3 ){",
+      "\t$0",
+      "}"
+    ],
+    "description": "Creates an associated function (like a static method) within an impl block"
+  },
+  "If Statement": {
+    "prefix": "if",
+    "body": [
+      "if $1 {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Creates an if statement"
+  },
+  "If/Else Statement": {
+    "prefix": "ifelse",
+    "body": [
+      "if $1 {",
+      "\t$2",
+      "} else {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Creates an if/else statement"
+  },
+  "Loop": {
+    "prefix": "loop",
+    "body": [
+      "loop {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Creates an infinite loop"
+  },
+  "While Loop": {
+    "prefix": "while",
+    "body": [
+      "while $1 {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Creates a while loop"
+  },
+  "For In Loop": {
+    "prefix": "forin",
+    "body": [
+      "for $1 in $2 {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Creates a for loop over an iterator"
+  },
+  "Match Statement": {
+    "prefix": "match",
+    "body": [
+      "match $1 {",
+      "\t$2 => $3,",
+      "\t$0",
+      "}"
+    ],
+    "description": "Creates a match statement"
+  },
+  "Match Option": {
+    "prefix": "matchopt",
+    "body": [
+      "match $1 {",
+      "\tSome($2) => {",
+      "\t\t$3",
+      "\t},",
+      "\tNone => {",
+      "\t\t$0",
+      "\t},",
+      "}"
+    ],
+    "description": "Matches on an Option<T>"
+  },
+  "Match Result": {
+    "prefix": "matchres",
+    "body": [
+      "match $1 {",
+      "\tOk($2) => {",
+      "\t\t$3",
+      "\t},",
+      "\tErr($4) => {",
+      "\t\t$0",
+      "\t},",
+      "}"
+    ],
+    "description": "Matches on a Result<T, E>"
+  },
+  "New Empty Vector": {
+    "prefix": "vecnew",
+    "body": [
+      "let mut $1: Vec<$2> = Vec::new();$0"
+    ],
+    "description": "Creates a new mutable empty vector with type annotation"
+  },
+  "Vector from vec! Macro": {
+    "prefix": "vecmac",
+    "body": [
+      "let $1 = vec![$2];$0"
+    ],
+    "description": "Creates a vector using the vec! macro"
+  },
+  "Read Line from Stdin": {
+    "prefix": "readln",
+    "body": [
+      "let mut $1 = String::new();",
+      "std::io::stdin()",
+      "\t.read_line(&mut $1)",
+      "\t.expect(\"Failed to read line\");",
+      "$0"
+    ],
+    "description": "Reads a line from standard input into a String"
+  },
+  "Basic Test Function": {
+    "prefix": "testfn",
+    "body": [
+      "#[test]",
+      "fn $1() {",
+      "\t$0",
+      "\tassert!(true); // Placeholder assertion",
+      "}"
+    ],
+    "description": "Creates a basic test function"
+  },
+  "Assert Equal Test": {
+    "prefix": "testeq",
+    "body": [
+      "#[test]",
+      "fn $1() {",
+      "\tlet expected = $2;",
+      "\tlet actual = $3;",
+      "\tassert_eq!(expected, actual);$0",
+      "}"
+    ],
+    "description": "Creates a test function with assert_eq!"
+  },
+  "Module Definition": {
+    "prefix": "mod",
+    "body": [
+      "mod $1 {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Creates a module"
+  },
+  "Use Statement": {
+    "prefix": "use",
+    "body": [
+      "use $1;$0"
+    ],
+    "description": "Creates a use statement"
+  }
+}

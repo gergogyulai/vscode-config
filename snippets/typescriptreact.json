@@ -1,0 +1,82 @@
+{
+  "React Functional Component with TypeScript": {
+    "prefix": "rfc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "interface ${1:Props} {",
+      "  $2",
+      "}",
+      "",
+      "const ${3:ComponentName}: React.FC<${1:Props}> = ({$4}) => {",
+      "  return (",
+      "    <div>",
+      "      $5",
+      "    </div>",
+      "  );",
+      "};",
+      "",
+      "export default ${3:ComponentName};"
+    ],
+    "description": "React Functional Component with TypeScript interface"
+  },
+  "React Functional Component with TypeScript (children)": {
+    "prefix": "rfcc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "interface ${1:Props} {",
+      "  children: React.ReactNode;",
+      "  $2",
+      "}",
+      "",
+      "const ${3:ComponentName}: React.FC<${1:Props}> = ({ children, $4 }) => {",
+      "  return (",
+      "    <div>",
+      "      {children}",
+      "    </div>",
+      "  );",
+      "};",
+      "",
+      "export default ${3:ComponentName};"
+    ],
+    "description": "React Functional Component with TypeScript interface including children prop"
+  },
+  "useState Hook": {
+    "prefix": "usestate",
+    "body": [
+      "const [${1:stateName}, set${1/(.*)/${U}$1/}] = React.useState<${2:string}>(${3:''});"
+    ],
+    "description": "React useState hook with TypeScript"
+  },
+  "useEffect Hook": {
+    "prefix": "useeffect",
+    "body": [
+      "React.useEffect(() => {",
+      "  ${1}",
+      "}, [${2}]);"
+    ],
+    "description": "React useEffect hook"
+  },
+  "useContext Hook": {
+    "prefix": "usecontext",
+    "body": [
+      "const ${1:contextName} = React.useContext(${2:Context});"
+    ],
+    "description": "React useContext hook"
+  },
+  "React.memo": {
+    "prefix": "rmemo",
+    "body": [
+      "export default React.memo(${1:ComponentName});"
+    ],
+    "description": "React.memo for functional components"
+  },
+  "useRef Hook": {
+    "prefix": "useref",
+    "body": [
+      "const ${1:refName} = React.useRef<${2:HTMLElement | null}>(null);"
+    ],
+    "description": "React useRef hook with type"
+  }
+}

@@ -1,0 +1,139 @@
+{
+  // Log variable to console
+  "Log Variable": {
+    "prefix": "clog",
+    "body": [
+      "console.log('$1:', ${1:variable});",
+      "$0"
+    ],
+    "description": "Log variable to console with label"
+  },
+
+  // Basic TypeScript Class
+  "TypeScript Class": {
+    "prefix": "tsclass",
+    "body": [
+      "export class ${1:ClassName} {",
+      "\tconstructor(${2:params}) {",
+      "\t\t$0",
+      "\t}",
+      "}"
+    ],
+    "description": "Creates a basic TypeScript class structure"
+  },
+
+  // TypeScript Class with Constructor Property Promotion
+  "TypeScript Class (Prop Promo)": {
+    "prefix": "tsclassp",
+    "body": [
+      "export class ${1:ClassName} {",
+      "\tconstructor(private ${2:propertyName}: ${3:type}) {",
+      "\t\t$0",
+      "\t}",
+      "}"
+    ],
+    "description": "Creates a TS class using constructor property promotion"
+  },
+
+  // Basic TypeScript Interface
+  "TypeScript Interface": {
+    "prefix": "tsinterface",
+    "body": [
+      "export interface ${1:InterfaceName} {",
+      "\t${2:propertyName}: ${3:type};",
+      "\t$0",
+      "}"
+    ],
+    "description": "Creates a basic TypeScript interface"
+  },
+
+  // Basic TypeScript Function
+  "TypeScript Function": {
+    "prefix": "tsfunc",
+    "body": [
+      "export function ${1:functionName}(${2:paramName}: ${3:paramType}): ${4:returnType} {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Creates a basic TypeScript function"
+  },
+
+  // TypeScript Arrow Function (const)
+  "TypeScript Arrow Function": {
+    "prefix": "tsaf",
+    "body": [
+      "export const ${1:functionName} = (${2:paramName}: ${3:paramType}): ${4:returnType} => {",
+      "\t$0",
+      "};"
+    ],
+    "description": "Creates a TypeScript arrow function assigned to a const"
+  },
+
+  // TypeScript Async Arrow Function (const)
+  "TypeScript Async Arrow Function": {
+    "prefix": "tsasyncaf",
+    "body": [
+      "export const ${1:functionName} = async (${2:paramName}: ${3:paramType}): Promise<${4:returnType}> => {",
+      "\t$0",
+      "};"
+    ],
+    "description": "Creates an async TypeScript arrow function assigned to a const"
+  },
+
+  // TypeScript Named Import
+  "TypeScript Named Import": {
+    "prefix": "tsimport",
+    "body": [
+      "import { $1 } from '${2:module}';",
+      "$0"
+    ],
+    "description": "Imports named members from a module"
+  },
+
+  // TypeScript Default Import
+  "TypeScript Default Import": {
+    "prefix": "tsimportd",
+    "body": [
+      "import $1 from '${2:module}';",
+      "$0"
+    ],
+    "description": "Imports the default export from a module"
+  },
+
+  // TypeScript for...of loop
+  "TypeScript For Of Loop": {
+    "prefix": "tsforof",
+    "body": [
+      "for (const ${1:item} of ${2:iterable}) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Creates a TypeScript for...of loop"
+  },
+
+  // TypeScript try...catch block
+  "TypeScript Try Catch": {
+    "prefix": "tstry",
+    "body": [
+      "try {",
+      "\t$1",
+      "} catch (error: unknown) {",
+      "\tconsole.error('${2:Error caught}:', error);",
+      "\t$0",
+      "}"
+    ],
+    "description": "Creates a TypeScript try...catch block with error typing"
+  },
+
+    // TypeScript Enum
+  "TypeScript Enum": {
+    "prefix": "tsenum",
+    "body": [
+      "export enum ${1:EnumName} {",
+      "\t${2:Key} = ${3:0},",
+      "\t$0",
+      "}"
+    ],
+    "description": "Creates a basic TypeScript enum (numeric)"
+  }
+}

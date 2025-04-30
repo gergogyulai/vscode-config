@@ -1,1 +1,84 @@
+{
+  "recommendations": [
+    // themes & icons
+    "akamud.vscode-theme-onedark",
+    "b4456609.theme-atom-one-light",
+    "github.github-vscode-theme",
+    "catppuccin.catppuccin-vsc",
+    "degreat.theme-to-zed",
+    "enkia.tokyo-night",
+    "pmndrs.pmndrs",
+    "pkief.material-icon-theme",
 
+    // language support
+    "golang.go",
+    "astro-build.astro-vscode",
+    "ms-dotnettools.csdevkit",
+    "ms-dotnettools.csharp",
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "redhat.vscode-xml",
+    "redhat.vscode-yaml",
+    "rust-lang.rust-analyzer",
+    "dustypomerleau.rust-syntax",
+    "svelte.svelte-vscode",
+    "tamasfe.even-better-toml",
+    "bradlc.vscode-tailwindcss",
+    "csstools.postcss",
+    "slevesque.shader",
+    "rajd.react-native-stylesheet-color-palette",
+    "jock.svg",
+
+    // linting & formatting
+    "esbenp.prettier-vscode",
+    "ms-python.black-formatter",
+    "dbaeumer.vscode-eslint",
+    "kevinrose.vsc-python-indent",
+
+    // git & github
+    "github.copilot",
+    "github.copilot-chat",
+    "eamodio.gitlens",
+    "github.vscode-github-actions",
+    "me-dutour-mathieu.vscode-github-actions",
+    "GitHub.vscode-pull-request-github",
+
+    // remote development
+    "ms-vscode-remote.vscode-remote-extensionpack",
+    "ms-vscode-remote.remote-containers",
+    "ms-vscode-remote.remote-ssh",
+    "ms-vscode-remote.remote-ssh-edit",
+    "ms-vscode-remote.remote-wsl",
+    "ms-vscode-remote-explorer",
+    "ms-vscode-remote-server",
+
+    // utilites
+    "ms-python.debugpy",
+    "lokalise.i18n-ally",
+    "zh9528.file-size",
+    "unclebeast.har-viewer",
+    "tomoki1207.pdf",
+    "qwtel.sqlite-viewer",
+    "plibither8.remove-comments",
+    "mariusalchimavicius.json-to-ts",
+    "formulahendry.auto-rename-tag",
+    "bierner.markdown-preview-github-styles",
+    "editorconfig.editorconfig",
+    "fill-labs.dependi",
+    "bruceyuhb.hsl-preview",
+    "johnsoncodehk.vscode-tsconfig-helper",
+
+    // ms tools
+    "ms-azuretools.vscode-docker",
+    "ms-dotnettools.vscode-dotnet-runtime",
+    "ms-vscode.cmake-tools",
+    "ms-vscode.cpptools",
+    "ms-vscode.cpptools-extension-pack",
+    "ms-vscode.cpptools-themes",
+    "ms-vscode.powershell",
+    "ms-playwright.playwright",
+
+    //etc
+    "tauri-apps.tauri-vscode"
+  ]
+}
