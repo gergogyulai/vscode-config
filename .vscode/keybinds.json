@@ -1,0 +1,12 @@
+[
+  {
+    "key": "ctrl+shift+alt+cmd+k",
+    "command": "editor.foldAll",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "cmd+k cmd+0",
+    "command": "-editor.foldAll",
+    "when": "editorTextFocus && foldingEnabled"
+  }
+]
