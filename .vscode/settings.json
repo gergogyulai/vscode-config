@@ -21,9 +21,9 @@
     "svelte.enable-ts-plugin": true,
     "github.copilot.enable": {
         "*": true,
-        "plaintext": false,
+        "scminput": true,
         "markdown": true,
-        "scminput": false,
+        "plaintext": false,
         "github-actions-workflow": false
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode",
