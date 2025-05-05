@@ -1,6 +1,6 @@
 {
     "window.title": "${rootName}",
-    "workbench.colorTheme": "Atom One Dark",
+    "workbench.colorTheme": "Tokyo Night",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.productIconTheme": "Default",
     "workbench.tree.enableStickyScroll": false,
@@ -11,7 +11,8 @@
     "editor.tabSize": 2,
     "editor.indentSize": "tabSize",
     "editor.lineNumbers": "relative",
-    "editor.fontFamily": "Input Mono, Jetbrains Mono",
+    "editor.fontFamily": "SF Mono",
+    "editor.lineHeight": 1.7,
     "editor.guides.bracketPairs": "active",
     "editor.renderWhitespace": "trailing",
     "editor.minimap.enabled": false,
@@ -21,9 +22,9 @@
     "svelte.enable-ts-plugin": true,
     "github.copilot.enable": {
         "*": true,
-        "scminput": true,
-        "markdown": true,
         "plaintext": false,
+        "markdown": true,
+        "scminput": true,
         "github-actions-workflow": false
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -224,5 +225,6 @@
         "*.w": "$(capture).*.w, I$(capture).w",
         "*.wat": "$(capture).wasm",
         "*.xaml": "$(capture).xaml.cs"
-    }
+    },
+    "workbench.editor.empty.hint": "hidden"
 }
