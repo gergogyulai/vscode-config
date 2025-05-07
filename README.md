@@ -15,5 +15,5 @@
 - <samp><b>C#:</b></samp> [`.vscode/snippets/csharp.json`](./.vscode/snippets/csharp.json)
 - <samp><b>Rust:</b></samp> [`.vscode/snippets/rust.json`](./.vscode/snippets/rust.json)
 
-<samp><small>License: MIT</small></samp><br>
+<samp><small>License: [WTFPL](LICENSE)</small></samp><br>
 <samp><small>Last Updated: 2025-04-30</small></samp>
