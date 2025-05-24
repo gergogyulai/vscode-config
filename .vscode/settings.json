@@ -1,6 +1,6 @@
 {
     "window.title": "${rootName}",
-    "workbench.colorTheme": "Tokyo Night",
+    "workbench.colorTheme": "Atom One Dark",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.productIconTheme": "Default",
     "workbench.tree.enableStickyScroll": false,
@@ -128,7 +128,6 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "github.copilot.chat.codesearch.enabled": true,
     "gitlens.statusBar.enabled": false,
-    "chat.commandCenter.enabled": false,
     // updated 2025-03-27 03:47
     // https://github.com/antfu/vscode-file-nesting-config
     "explorer.fileNesting.enabled": true,
